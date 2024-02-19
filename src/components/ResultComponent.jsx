@@ -28,7 +28,10 @@ const ResultComponent = () => {
         <h4>Boş: {emptyAnswers}</h4>
         <div style={{justifyContent:'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
             {questionData.map((question, index) => (
-                <div key={index} style={{ borderRadius: '20px', width: '18%', color: 'white', margin: '5px', backgroundColor: userAnswers[index] === 'Boş' ? 'blue' : (userAnswers[index] === question.answer ? 'green' : 'red') }}>
+                <div
+                 key={index} 
+                 style={{ borderRadius: '20px', width: '18%', color: 'white', margin: '5px', backgroundColor: userAnswers[index] === 'Boş' ? 'blue' : (userAnswers[index] === question.answer ? 'green' : 'red') }}>
+                  
                     <p>   {index + 1}. Soru {userAnswers[index] === 'Boş' ? 'Boş' : (userAnswers[index] === question.answer ? 'Doğru' : 'Yanlış')}</p>
                 </div>
             ))}

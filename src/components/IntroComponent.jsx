@@ -12,6 +12,8 @@ const IntroComponent = () => {
         setShowResult,
         start,
         setStart} = useContext(DataContext);
+
+        
    const handleStartTest = () => {
     setStart(true);
    }

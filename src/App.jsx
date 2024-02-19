@@ -1,21 +1,20 @@
 import { useState,useContext } from 'react'
 import './App.css'
-import { DataProvider } from './contexts/DataContext' 
 import questions from './assets/questions';
 import QuestionComponent from './components/QuestionComponent';
 import ResultComponent from './components/ResultComponent';
 import IntroComponent from './components/IntroComponent';
-
+import Countdown from './components/CountdownComponent';
 
 
 function App() {
  
-  return (
-    <DataProvider>
+  return (   
+      <>
       <IntroComponent />
       <QuestionComponent />
       <ResultComponent />
-    </DataProvider>
+      </>
   );
 }
 
