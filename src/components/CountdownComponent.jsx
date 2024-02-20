@@ -39,7 +39,7 @@ function Countdown() {
   }, [currentQuestion]);
   return (
     <>
-      <h2 className="h1 alert alert-info text-center">{counter}</h2>
+      <h2 className="">{counter}</h2>
     </>
   );
 }
