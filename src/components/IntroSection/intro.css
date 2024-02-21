@@ -1,9 +1,8 @@
 body {
-    background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(252,70,132,1) 83%);
 }
 
-p {
+.intro-p {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: italic;

@@ -9,3 +9,20 @@
 .max-width-462 {
  max-width: 462.66px;
 }
+
+.question-logo {
+  width: 10em; 
+}
+
+.question-p {
+  font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1400px) {
+  #hiddenId {
+    display: none;
+  }
+}

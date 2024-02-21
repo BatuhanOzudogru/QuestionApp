@@ -28,7 +28,7 @@ const IntroComponent = () => {
       <img className="w-50" src="src/assets/pictures/logoQuizApp.png" alt="" />
       </div>
       <div className="start-screen col-8 d-flex flex-column justify-content-center align-items-center mt-4">
-        <p className="text-center">
+        <p className="text-center intro-p">
           Merhaba ve hoş geldiniz! Bu test, toplamda 10 sorudan oluşmaktadır ve
           her bir soruyu cevaplamak için 30 saniyeniz bulunmaktadır. Ancak
           unutmayın, ilk 10 saniye boyunca cevap şıkları görünmeyecek, bu

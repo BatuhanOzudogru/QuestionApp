@@ -24,7 +24,7 @@ const QuestionComponent = () => {
       clearTimeout(timerOptions.current);
       timerOptions.current = setTimeout(() => {
         setShowOptions(true);
-      }, 0);
+      }, 10000);
     }
   }, [start, currentQuestion]);
 
@@ -37,7 +37,7 @@ const QuestionComponent = () => {
         } else {
           setShowResult(true);
         }
-      }, 150000000);
+      }, 30000);
     }
   }, [start, currentQuestion]);
 
@@ -59,12 +59,12 @@ const QuestionComponent = () => {
   return (
 <div className="row">
     <div className="col-1"></div>      
-    <img className="col-1" src="src/assets/pictures/logoQuizApp.png" alt="" />
-    <div className="col-8"></div>
-    <div className="col-1">
+    <img className="col-1 question-logo" src="src/assets/pictures/logoQuizApp.png" alt="" />
+    <div className="col-7"></div>
+    <div className="col-1 text-light text-center align-self-center">
         <CountdownComponent />
     </div>
-    <div className="col-1"></div>
+    <div className="col-2" id='hiddenId'></div>
     <div className="col-2"></div>
     <div className="col-8 row height-412">
         <div className="col-6">

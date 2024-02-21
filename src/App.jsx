@@ -1,5 +1,5 @@
 import QuestionComponent from './components/QuestionSection/QuestionComponent';
-import ResultComponent from './components/ResultComponent';
+import ResultComponent from './components/ResultSection/ResultComponent';
 import IntroComponent from './components/IntroSection/IntroComponent';
 
 
