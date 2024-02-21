@@ -1,16 +1,14 @@
-body {
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(252,70,132,1) 83%);
-}
-
+/* Styling for the introductory text in the quiz component */
 .intro-p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    color: whitesmoke;
+  font-family: "Poppins", sans-serif; /* Set font family to 'Poppins' or a sans-serif font */
+  font-weight: 600; /* Set font weight to 600 for a bold appearance */
+  font-style: italic; /* Apply italic style to the font */
+  color: whitesmoke; /* Set text color to whitesmoke */
 }
 
+/* Styling for the start button in the quiz component */
 .start-btn {
-    background-color: silver;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  background-color: silver; /* Set background color to silver */
+  font-family: "Poppins", sans-serif; /* Set font family to 'Poppins' or a sans-serif font */
+  font-weight: 600; /* Set font weight to 600 for a bold appearance */
 }

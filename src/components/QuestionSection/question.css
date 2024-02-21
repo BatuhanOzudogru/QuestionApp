@@ -1,27 +1,34 @@
+/* Set a specific height of 412 pixels for elements with the class .height-412 */
 .height-412 {
-    height: 412px;
+  height: 412px;
 }
 
+/* Styling for the font size of elements with the class .question-p */
 .question-p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
+/* Set a maximum width of 462.66 pixels for elements with the class .max-width-462 */
 .max-width-462 {
- max-width: 462.66px;
+  max-width: 462.66px;
 }
 
+/* Styling for the width of elements with the class .question-logo */
 .question-logo {
-  width: 10em; 
+  width: 10em;
 }
 
+/* Styling for the font family, weight, style, and color of elements with the class .question-p */
 .question-p {
-  font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    color: whitesmoke;
+  font-family: "Poppins", sans-serif; /* Set font family to 'Poppins' or a sans-serif font */
+  font-weight: 600; /* Set font weight to 600 for a bold appearance */
+  font-style: italic; /* Apply italic style to the font */
+  color: whitesmoke; /* Set text color to whitesmoke */
 }
 
+/* Media query for screens with a maximum width of 1400 pixels */
 @media screen and (max-width: 1400px) {
+  /* Hide elements with the id #hiddenId when the screen width is below 1400 pixels */
   #hiddenId {
     display: none;
   }

@@ -1,17 +1,14 @@
-import QuestionComponent from './components/QuestionSection/QuestionComponent';
-import ResultComponent from './components/ResultSection/ResultComponent';
-import IntroComponent from './components/IntroSection/IntroComponent';
-
-
+import QuestionComponent from "./components/QuestionSection/QuestionComponent";
+import ResultComponent from "./components/ResultSection/ResultComponent";
+import IntroComponent from "./components/IntroSection/IntroComponent";
 
 function App() {
- 
-  return (   
-      <>
+  return (
+    <>
       <IntroComponent />
       <QuestionComponent />
       <ResultComponent />
-      </>
+    </>
   );
 }
 

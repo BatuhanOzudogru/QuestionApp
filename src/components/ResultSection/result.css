@@ -1,5 +1,6 @@
+/* Styling for the result number inside the rounded-circle element */
 .result-p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: whitesmoke;
+  font-family: "Poppins", sans-serif; /* Set font family to 'Poppins' or a sans-serif font */
+  font-weight: 600; /* Set font weight to 600 for a bold appearance */
+  color: whitesmoke; /* Set text color to whitesmoke */
 }
