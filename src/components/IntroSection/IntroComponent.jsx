@@ -3,6 +3,7 @@ import React from "react";
 import "./intro.css";
 import { useContext, useState } from "react";
 import { DataContext } from "../../contexts/DataContext";
+import logo from "/public/pictures/logoQuizApp.png";
 
 // Functional component for the introductory screen of the quiz
 const IntroComponent = () => {
@@ -36,7 +37,7 @@ const IntroComponent = () => {
         {/* Logo for the quiz application */}
         <img
           className="w-50"
-          src="public/pictures/logoQuizApp.png"
+          src={logo}
           alt=""
         />
       </div>

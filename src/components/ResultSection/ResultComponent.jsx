@@ -3,6 +3,7 @@ import React from "react";
 import "./result.css";
 import { useContext, useState } from "react";
 import { DataContext } from "../../contexts/DataContext";
+import logo from "/public/pictures/logoQuizApp.png";
 
 // Functional component for rendering the quiz results
 const ResultComponent = () => {
@@ -47,7 +48,7 @@ const ResultComponent = () => {
         <div className="col-6 align-self-center">
           <img
             className="mw-100"
-            src="public/pictures/logoQuizApp.png"
+            src={logo}
             alt=""
           />
         </div>

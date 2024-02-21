@@ -3,7 +3,7 @@ import React, { useContext, useRef, useEffect, useState } from "react";
 import "./question.css";
 import { DataContext } from "../../contexts/DataContext";
 import CountdownComponent from "../CountdownComponent";
-
+import logo from "/public/pictures/logoQuizApp.png";
 // Functional component for rendering quiz questions
 const QuestionComponent = () => {
   // Destructuring values from the DataContext
@@ -73,7 +73,7 @@ const QuestionComponent = () => {
       <div className="col-1"></div>
       <img
         className="col-1 question-logo"
-        src="public/pictures/logoQuizApp.png"
+        src={logo}
         alt=""
       />
       <div className="col-7"></div>

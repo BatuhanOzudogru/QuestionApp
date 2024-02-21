@@ -19,7 +19,7 @@ This is a simple quiz application built with React, designed to present question
 - CountdownComponent: This component handles the countdown timer displayed during each question.
 
 ## Usage
-- Link
+- [Question App](https://question-app-batuhanozudogrus-projects.vercel.app/)
 
 ## Technologies Used
 - React: A JavaScript library for building user interfaces.
