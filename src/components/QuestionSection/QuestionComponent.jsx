@@ -73,7 +73,7 @@ const QuestionComponent = () => {
       <div className="col-1"></div>
       <img
         className="col-1 question-logo"
-        src="src/assets/pictures/logoQuizApp.png"
+        src="public/pictures/logoQuizApp.png"
         alt=""
       />
       <div className="col-7"></div>

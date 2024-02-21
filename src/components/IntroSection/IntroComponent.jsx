@@ -36,7 +36,7 @@ const IntroComponent = () => {
         {/* Logo for the quiz application */}
         <img
           className="w-50"
-          src="src/assets/pictures/logoQuizApp.png"
+          src="public/pictures/logoQuizApp.png"
           alt=""
         />
       </div>

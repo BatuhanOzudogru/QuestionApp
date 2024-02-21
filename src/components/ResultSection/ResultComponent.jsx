@@ -47,7 +47,7 @@ const ResultComponent = () => {
         <div className="col-6 align-self-center">
           <img
             className="mw-100"
-            src="src/assets/pictures/logoQuizApp.png"
+            src="public/pictures/logoQuizApp.png"
             alt=""
           />
         </div>
