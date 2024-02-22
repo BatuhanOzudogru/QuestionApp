@@ -31,7 +31,7 @@ const QuestionComponent = () => {
       clearTimeout(timerOptions.current);
       timerOptions.current = setTimeout(() => {
         setShowOptions(true);
-      }, 1000);
+      }, 10000);
     }
   }, [start, currentQuestion]);
 
@@ -45,7 +45,7 @@ const QuestionComponent = () => {
         } else {
           setShowResult(true);
         }
-      }, 3000);
+      }, 30000);
     }
   }, [start, currentQuestion]);
 
