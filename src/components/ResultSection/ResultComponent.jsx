@@ -1,26 +1,22 @@
-// Importing necessary dependencies and components from React and custom contexts
-import React from "react";
+import React, { useState } from "react";
 import "./result.css";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { DataContext } from "../../contexts/DataContext";
 import logo from "/public/pictures/logoQuizApp.png";
 
-// Functional component for rendering the quiz results
 const ResultComponent = () => {
-  // Destructuring values from the DataContext
   const {
     questionData,
-    currentQuestion,
-    setCurrentQuestion,
     userAnswers,
-    setUserAnswers,
     showResult,
-    setShowResult,
-    start,
+    setUserAnswers,
     setStart,
+    setCurrentQuestion,
+    setShowResult,
   } = useContext(DataContext);
 
-  // Function to handle restarting the quiz
+  const [hoveredIndex, setHoveredIndex] = useState(0);
+
   const handleStartTest = () => {
     setShowResult(false);
     setUserAnswers(new Array(questionData.length).fill("Boş"));
@@ -28,17 +24,15 @@ const ResultComponent = () => {
     setCurrentQuestion(0);
   };
 
-  // Calculate the number of correct, wrong, and empty answers
   const correctAnswers = userAnswers.filter(
     (answer, index) => answer === questionData[index].answer
   ).length;
   const emptyAnswers = userAnswers.filter((answer) => answer === "Boş").length;
   const wrongAnswers = questionData.length - correctAnswers - emptyAnswers;
 
-  // JSX for rendering the quiz results component
   return (
     <div
-      className="row mt-2"
+      className="row mt-1"
       style={{ visibility: showResult ? "visible" : "hidden" }}
     >
       <div className="col-2"></div>
@@ -46,11 +40,7 @@ const ResultComponent = () => {
       <div className="col-8 row justify-content-center">
         {/* Logo and result summary */}
         <div className="col-6 align-self-center">
-          <img
-            className="mw-100"
-            src={logo}
-            alt=""
-          />
+          <img className="mw-100" src={logo} alt="" />
         </div>
 
         <div className="col-6 row align-self-center">
@@ -67,18 +57,33 @@ const ResultComponent = () => {
             <h3>{wrongAnswers}</h3>
           </div>
 
-          <div className="col-4 text-light text-center">
+          <div className="col-4 text-light text-center text-light">
             <h4>Boş</h4>
             <hr />
             <h3>{emptyAnswers}</h3>
           </div>
         </div>
 
-        <div className="col-4"></div>
+        <div className="col-4 user-answer text-center text-light">
+          {/* User's Answer Section */}
+          <p>
+            Yanıtınız <hr />
+            {userAnswers[hoveredIndex]}
+          </p>
+        </div>
+
         <div className="col-4 text-light mb-4 fs-2 text-center">
+          {/* Results Section */}
           <p className="ps-4">SONUÇLAR</p>
         </div>
-        <div className="col-4"></div>
+
+        <div className="col-4 correct-answer text-center text-light">
+          {/* Correct Answer Section */}
+          <p className="ps-5">
+            Doğru Yanıt <hr />
+            {questionData[hoveredIndex].answer}
+          </p>
+        </div>
 
         {/* Display result circles for each question */}
         <div>
@@ -89,11 +94,11 @@ const ResultComponent = () => {
             {questionData.map((question, index) => (
               <div
                 key={index}
-                className="col-2 d-flex justify-content-center"
-                style={{ margin: "5px" }}
+                className="col-2 d-flex justify-content-center answers"
+                style={{ margin: "5px", position: "relative" }}
               >
                 <div
-                  className="rounded-circle"
+                  className="rounded-circle asd"
                   style={{
                     color: "white",
                     width: "60px",
@@ -105,14 +110,15 @@ const ResultComponent = () => {
                         ? "#006400"
                         : "#8B0000",
                   }}
+                  onMouseEnter={() => setHoveredIndex(index)}
                 >
                   <p className="text-center pt-1 fs-2 result-p">{index + 1}</p>
                 </div>
+                {/* Display details popup if hovered */}
               </div>
             ))}
           </div>
         </div>
-
         {/* Button to restart the quiz */}
         <button
           className="btn btn-outline-secondary mt-5 start-btn col-3 ms-3"
@@ -122,11 +128,8 @@ const ResultComponent = () => {
           Tekrar Çöz
         </button>
       </div>
-
-      <div className="col-2"></div>
     </div>
   );
 };
 
-// Exporting the ResultComponent for use in other parts of the application
 export default ResultComponent;

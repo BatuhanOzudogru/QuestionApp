@@ -4,3 +4,14 @@
   font-weight: 600; /* Set font weight to 600 for a bold appearance */
   color: whitesmoke; /* Set text color to whitesmoke */
 }
+
+.user-answer p,
+.correct-answer p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+.user-answer {
+  height: 135px
+}
