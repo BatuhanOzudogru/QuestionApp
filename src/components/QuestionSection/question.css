@@ -15,7 +15,7 @@
 
 /* Styling for the width of elements with the class .question-logo */
 .question-logo {
-  width: 10em;
+  width: 8.33333333%;
 }
 
 /* Styling for the font family, weight, style, and color of elements with the class .question-p */
@@ -26,10 +26,3 @@
   color: whitesmoke; /* Set text color to whitesmoke */
 }
 
-/* Media query for screens with a maximum width of 1400 pixels */
-@media screen and (max-width: 1400px) {
-  /* Hide elements with the id #hiddenId when the screen width is below 1400 pixels */
-  #hiddenId {
-    display: none;
-  }
-}

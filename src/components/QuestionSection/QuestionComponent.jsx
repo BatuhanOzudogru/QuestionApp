@@ -80,7 +80,7 @@ const QuestionComponent = () => {
       <div className="col-1 text-light text-center align-self-center">
         <CountdownComponent />
       </div>
-      <div className="col-2" id="hiddenId"></div>
+      <div className="col-2"></div>
       <div className="col-2"></div>
 
       {/* Question and options components */}
